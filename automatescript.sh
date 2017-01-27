@@ -21,8 +21,8 @@ function uninstall() {
   echo "Removing actions..."
   wsk action delete createdoc
   wsk action delete readdoc
-  wsk action delete createSeq
-  wsk action delete readSeq
+  wsk action delete createseq
+  wsk action delete readseq
   echo "Removing packages..."
   wsk package delete bluemixcloudant
   echo "Done"
