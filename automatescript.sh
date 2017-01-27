@@ -10,6 +10,8 @@ function install() {
 	wsk action create createdoc create.js
 	echo "creating an action"
 	wsk action create readdoc read.js
+	echo "creating a action"
+	wsk action create firetrigger trigger.js
 	echo "creating seq actions"
     wsk action create createseq --sequence createdoc,bluemixcloudant/create-document
 	echo "creating seq actions"
