@@ -11,9 +11,9 @@ function install() {
 	echo "creating an action"
 	wsk action create readdoc read.js
 	echo "creating seq actions"
-    wsk action create createseq --sequence createdoc,bluemixcloudant/write
+    wsk action create createseq --sequence createdoc,bluemixcloudant/create-document
 	echo "creating seq actions"
-    wsk action create readseq --sequence readdoc,bluemixcloudant/read
+    wsk action create readseq --sequence readdoc,bluemixcloudant/read-document
     
 }
 
