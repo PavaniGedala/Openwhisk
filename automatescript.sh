@@ -24,7 +24,7 @@ function uninstall() {
   wsk action delete createSeq
   wsk action delete readSeq
   echo "Removing packages..."
-  wsk package delete bluemixcloudantdetails
+  wsk package delete bluemixcloudant
   echo "Done"
   wsk list
 }
@@ -34,7 +34,6 @@ function showenv() {
   echo CLOUDANT_password=$CLOUDANT_password
   echo CLOUDANT_host=$CLOUDANT_host
   echo CLOUDANT_dbname=$CLOUDANT_dbname
- 
 }
 
 case "$1" in
